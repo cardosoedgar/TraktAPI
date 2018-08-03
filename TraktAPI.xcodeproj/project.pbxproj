@@ -13,6 +13,8 @@
 		6C8E2F432113DE5500D15EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E2F422113DE5500D15EB6 /* Assets.xcassets */; };
 		6C8E2F462113DE5500D15EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E2F442113DE5500D15EB6 /* LaunchScreen.storyboard */; };
 		6C8E2F512113DE5500D15EB6 /* TraktAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F502113DE5500D15EB6 /* TraktAPITests.swift */; };
+		6C8E2F5C2113E05A00D15EB6 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F5B2113E05A00D15EB6 /* Json.swift */; };
+		6C8E2F5E2113E25100D15EB6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		6C8E2F4C2113DE5500D15EB6 /* TraktAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraktAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8E2F502113DE5500D15EB6 /* TraktAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraktAPITests.swift; sourceTree = "<group>"; };
 		6C8E2F522113DE5500D15EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8E2F5B2113E05A00D15EB6 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				6C8E2F422113DE5500D15EB6 /* Assets.xcassets */,
 				6C8E2F442113DE5500D15EB6 /* LaunchScreen.storyboard */,
 				6C8E2F472113DE5500D15EB6 /* Info.plist */,
+				6C8E2F5B2113E05A00D15EB6 /* Json.swift */,
+				6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */,
 			);
 			path = TraktAPI;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8E2F5C2113E05A00D15EB6 /* Json.swift in Sources */,
 				6C8E2F3E2113DE5200D15EB6 /* ViewController.swift in Sources */,
+				6C8E2F5E2113E25100D15EB6 /* NetworkRequest.swift in Sources */,
 				6C8E2F3C2113DE5200D15EB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
