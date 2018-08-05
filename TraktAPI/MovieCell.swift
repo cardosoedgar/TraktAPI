@@ -13,8 +13,10 @@ class MovieCell: UICollectionViewCell, ReusableCell, LoadNib {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    func setup(with title: String, urlString: String) {
-        titleLabel.text = title
-        image.image = UIImage(named: "placeholder")
+    func setup(with movie: Movie?) {
+        if let movie = movie {
+            titleLabel.text = "\(movie.title)(\(movie.year))"
+            image.image = UIImage(named: "placeholder")
+        }
     }
 }

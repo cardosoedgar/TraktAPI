@@ -18,6 +18,8 @@
 		6C8E2F612113F4A600D15EB6 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F5F2113F4A600D15EB6 /* MovieCell.swift */; };
 		6C8E2F622113F4A600D15EB6 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E2F602113F4A600D15EB6 /* MovieCell.xib */; };
 		6C8E2F642113F6E500D15EB6 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F632113F6E500D15EB6 /* CollectionViewExtensions.swift */; };
+		6C8E2F6621172F4D00D15EB6 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F6521172F4D00D15EB6 /* MovieManager.swift */; };
+		6C8E2F6821172F6400D15EB6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E2F6721172F6400D15EB6 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		6C8E2F5F2113F4A600D15EB6 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6C8E2F602113F4A600D15EB6 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		6C8E2F632113F6E500D15EB6 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		6C8E2F6521172F4D00D15EB6 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		6C8E2F6721172F6400D15EB6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */,
 				6C8E2F5F2113F4A600D15EB6 /* MovieCell.swift */,
 				6C8E2F602113F4A600D15EB6 /* MovieCell.xib */,
+				6C8E2F6521172F4D00D15EB6 /* MovieManager.swift */,
+				6C8E2F6721172F6400D15EB6 /* Movie.swift */,
 			);
 			path = TraktAPI;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 			files = (
 				6C8E2F642113F6E500D15EB6 /* CollectionViewExtensions.swift in Sources */,
 				6C8E2F5C2113E05A00D15EB6 /* Json.swift in Sources */,
+				6C8E2F6621172F4D00D15EB6 /* MovieManager.swift in Sources */,
 				6C8E2F3E2113DE5200D15EB6 /* ViewController.swift in Sources */,
 				6C8E2F5E2113E25100D15EB6 /* NetworkRequest.swift in Sources */,
 				6C8E2F612113F4A600D15EB6 /* MovieCell.swift in Sources */,
+				6C8E2F6821172F6400D15EB6 /* Movie.swift in Sources */,
 				6C8E2F3C2113DE5200D15EB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

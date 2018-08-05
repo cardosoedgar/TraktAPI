@@ -18,11 +18,43 @@ class NetworkRequest {
         
     }
     
-    func request(with search: String, completion: @escaping (Result<Json>) -> Void) {
-        guard let request = createURLRequest(with: search) else {
+    func requestPopular(completion: @escaping ([JsonObject]?) -> Void) {
+        let stringUrl = "https://api.trakt.tv/movies/popular"
+        guard let urlRequest = createURLRequest(with: stringUrl) else {
             return
         }
         
+        request(with: urlRequest) { result in
+            switch result {
+            case .success(.array(let json)):
+                DispatchQueue.main.async {
+                    completion(json)
+                }
+            default:
+                completion(nil)
+            }
+        }
+    }
+    
+    func request(with search: String, completion: @escaping ([JsonObject]?) -> Void) {
+        let stringUrl = "https://api.trakt.tv/search/movie?query=\(search)"
+        guard let urlRequest = createURLRequest(with: stringUrl) else {
+            return
+        }
+        
+        request(with: urlRequest) { result in
+            switch result {
+            case .success(.array(let json)):
+                DispatchQueue.main.async {
+                    completion(json)
+                }
+            default:
+                completion(nil)
+            }
+        }
+    }
+    
+    private func request(with request: URLRequest, completion: @escaping (Result<Json>) -> Void) {
         let task = URLSession.shared.dataTask(with: request) { data, url, error in
             guard let data = data else {
                 return
@@ -40,8 +72,8 @@ class NetworkRequest {
         task.resume()
     }
     
-    private func createURLRequest(with search: String) -> URLRequest? {
-        guard let url = URL(string: "https://api.trakt.tv/search/movie?query=\(search)") else {
+    private func createURLRequest(with string: String) -> URLRequest? {
+        guard let url = URL(string: string) else {
             return nil
         }
         

@@ -11,35 +11,49 @@ import UIKit
 class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
     let refreshControl = UIRefreshControl()
+    
+    let manager = MovieManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configInterface()
+        loadMovies()
+    }
+    
+    func configInterface() {
         self.collectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(loadMovies), for: .valueChanged)
         collectionView.register(cellType: MovieCell.self)
     }
     
     @objc func loadMovies() {
-        
+        manager.requestPopularMovies { success in
+            if success {
+                self.collectionView.reloadData()
+            } else {
+                
+            }
+        }
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return manager.getMoviesCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: MovieCell.self)
-        cell.setup(with: "movie \(indexPath.row) (YEAR)", urlString: "")
+        let movie = manager.getMovie(at: indexPath.row)
+        cell.setup(with: movie)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
