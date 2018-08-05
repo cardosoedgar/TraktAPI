@@ -31,8 +31,8 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
         manager.requestPopularMovies { success in
             if success {
                 self.collectionView.reloadData()
-            } else {
-                
+                self.refreshControl.endRefreshing()
+                return
             }
         }
     }
