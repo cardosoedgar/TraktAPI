@@ -80,6 +80,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4D0F0C2119237F00AF659D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E2F5B2113E05A00D15EB6 /* Json.swift */,
+				6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6C4D0F0D2119238C00AF659D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E2F6721172F6400D15EB6 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C4D0F0E2119239800AF659D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E2F6521172F4D00D15EB6 /* MovieManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6C4D0F0F211923A000AF659D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E2F5F2113F4A600D15EB6 /* MovieCell.swift */,
+				6C8E2F602113F4A600D15EB6 /* MovieCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C63BE9621192310004C1D91 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E2F3B2113DE5200D15EB6 /* AppDelegate.swift */,
+				6C8E2F422113DE5500D15EB6 /* Assets.xcassets */,
+				6C8E2F442113DE5500D15EB6 /* LaunchScreen.storyboard */,
+				6C8E2F472113DE5500D15EB6 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		6C8E2F2F2113DE5200D15EB6 = {
 			isa = PBXGroup;
 			children = (
@@ -104,18 +149,13 @@
 			isa = PBXGroup;
 			children = (
 				6C8E2F632113F6E500D15EB6 /* CollectionViewExtensions.swift */,
-				6C8E2F3B2113DE5200D15EB6 /* AppDelegate.swift */,
 				6C8E2F3D2113DE5200D15EB6 /* ViewController.swift */,
 				6C8E2F3F2113DE5200D15EB6 /* Main.storyboard */,
-				6C8E2F422113DE5500D15EB6 /* Assets.xcassets */,
-				6C8E2F442113DE5500D15EB6 /* LaunchScreen.storyboard */,
-				6C8E2F472113DE5500D15EB6 /* Info.plist */,
-				6C8E2F5B2113E05A00D15EB6 /* Json.swift */,
-				6C8E2F5D2113E25100D15EB6 /* NetworkRequest.swift */,
-				6C8E2F5F2113F4A600D15EB6 /* MovieCell.swift */,
-				6C8E2F602113F4A600D15EB6 /* MovieCell.xib */,
-				6C8E2F6521172F4D00D15EB6 /* MovieManager.swift */,
-				6C8E2F6721172F6400D15EB6 /* Movie.swift */,
+				6C4D0F0F211923A000AF659D /* Views */,
+				6C4D0F0E2119239800AF659D /* Manager */,
+				6C4D0F0D2119238C00AF659D /* Model */,
+				6C4D0F0C2119237F00AF659D /* Network */,
+				6C63BE9621192310004C1D91 /* Support */,
 			);
 			path = TraktAPI;
 			sourceTree = "<group>";
