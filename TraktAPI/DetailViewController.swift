@@ -9,12 +9,6 @@
 import UIKit
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var releaseDate: UILabel!
-    @IBOutlet weak var runtime: UILabel!
-    @IBOutlet weak var tagline: UILabel!
-    @IBOutlet weak var rating: UILabel!
-    @IBOutlet weak var genre: UILabel!
-    @IBOutlet weak var overview: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var movie: Movie?
@@ -24,23 +18,37 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(cellType: ImageCell.self)
+        collectionView.register(UINib(nibName: "HeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView")
         setupMovie()
     }
     
     func setupMovie() {
         title = movie?.title
-        releaseDate.text = movie?.released
-        runtime.text = "\(movie?.runtime ?? 0)min"
-        tagline.text = movie?.tagline
-        rating.text = "\(movie?.rating ?? 0)"
-        genre.text = movie?.genres.joined(separator: ", ")
-        overview.text = movie?.overview
         manager?.requestImages(with: movie?.tmdbId ?? 0) { images in
             if let images = images {
                 self.gallery = images
                 self.collectionView.reloadData()
             }
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView", for: indexPath)
+        if let header = header as? HeaderView {
+            header.setup(with: movie)
+        }
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        var height: CGFloat = 0
+        if let header = UINib(nibName: "HeaderView", bundle:nil).instantiate(withOwner: nil, options: nil)[0] as? HeaderView {
+            header.setup(with: movie)
+            header.setNeedsLayout()
+            header.setNeedsUpdateConstraints()
+            height = header.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        }
+        return CGSize(width: UIScreen.main.bounds.width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
