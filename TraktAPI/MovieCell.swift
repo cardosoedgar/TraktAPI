@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieCell: UICollectionViewCell, ReusableCell, LoadNib {
 
@@ -16,7 +17,8 @@ class MovieCell: UICollectionViewCell, ReusableCell, LoadNib {
     func setup(with movie: Movie?) {
         if let movie = movie {
             titleLabel.text = "\(movie.title)(\(movie.year))"
-            image.image = UIImage(named: "placeholder")
+            let url = URL(string: "http://img.omdbapi.com/?apikey=d06bc8b3&i=\(movie.id)")
+            image.kf.setImage(with: url)
         }
     }
 }

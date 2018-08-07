@@ -27,9 +27,7 @@ class NetworkRequest {
         request(with: urlRequest) { result in
             switch result {
             case .success(.array(let json)):
-                DispatchQueue.main.async {
-                    completion(json)
-                }
+                completion(json)
             default:
                 completion(nil)
             }
@@ -45,9 +43,7 @@ class NetworkRequest {
         request(with: urlRequest) { result in
             switch result {
             case .success(.array(let json)):
-                DispatchQueue.main.async {
-                    completion(json)
-                }
+                completion(json)
             default:
                 completion(nil)
             }
@@ -62,11 +58,15 @@ class NetworkRequest {
             
             let validJson = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
             if let validJson = validJson, let json = Json(json: validJson) {
-                completion(.success(json))
+                DispatchQueue.main.async {
+                    completion(.success(json))
+                }
                 return
             }
             
-            completion(.error)
+            DispatchQueue.main.async {
+                completion(.error)
+            }
         }
         
         task.resume()

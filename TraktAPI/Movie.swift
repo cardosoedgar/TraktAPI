@@ -12,7 +12,6 @@ class Movie {
     let title: String
     let year: Int
     let id: String
-    var image: String?
     
     init?(jsonObject: JsonObject) {
         guard let title = jsonObject["title"] as? String,
