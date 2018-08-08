@@ -71,17 +71,19 @@ class NetworkRequest {
     }
     
     private func request(with request: URLRequest, completion: @escaping (Result<Json>) -> Void) {
-        let task = URLSession.shared.dataTask(with: request) { data, url, error in
-            guard let data = data else {
-                return
-            }
-            
-            let validJson = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
-            if let validJson = validJson, let json = Json(json: validJson) {
-                DispatchQueue.main.async {
-                    completion(.success(json))
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        config.urlCache = nil
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request) { data, url, error in
+            if let data = data {
+                let validJson = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                if let validJson = validJson, let json = Json(json: validJson) {
+                    DispatchQueue.main.async {
+                        completion(.success(json))
+                    }
+                    return
                 }
-                return
             }
             
             DispatchQueue.main.async {

@@ -17,6 +17,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Movies"
         configInterface()
         loadMovies()
     }
@@ -29,11 +30,13 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
     
     @objc func loadMovies() {
         manager.requestPopularMovies { success in
+            self.refreshControl.endRefreshing()
             if success {
                 self.collectionView.reloadData()
-                self.refreshControl.endRefreshing()
                 return
             }
+            
+            self.showAlert(with: "Erro", and: "Could not fetch movies. try again later.")
         }
     }
     
@@ -45,7 +48,10 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
         manager.requestMovie(with: text) { success in
             if success {
                 self.collectionView.reloadData()
+                return
             }
+            
+            self.showAlert(with: "Erro", and: "Could not fetch movies. try again later.")
         }
     }
     
