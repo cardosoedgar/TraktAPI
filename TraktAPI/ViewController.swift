@@ -29,6 +29,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
     }
     
     @objc func loadMovies() {
+        searchBar.text = ""
         manager.requestPopularMovies { success in
             self.refreshControl.endRefreshing()
             if success {
