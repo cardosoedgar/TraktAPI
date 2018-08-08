@@ -19,9 +19,9 @@ class MovieManagerTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         manager = MovieManager(network: networkMock)
         networkMock.success = true
+        super.tearDown()
     }
     
     func testGetMovieOutOfBounds() {

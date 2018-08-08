@@ -11,6 +11,8 @@ target 'TraktAPI' do
     inherit! :search_paths
 
     pod 'Nimble'
+    pod 'KIF'
+    pod 'KIF/IdentifierTests'
   end
 
 end

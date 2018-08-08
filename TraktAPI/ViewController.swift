@@ -13,13 +13,15 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
     @IBOutlet weak var searchBar: UISearchBar!
     let refreshControl = UIRefreshControl()
     
-    let manager = MovieManager()
+    var manager = MovieManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Movies"
         configInterface()
         loadMovies()
+        searchBar.accessibilityIdentifier = "SEARCH_BAR"
+        collectionView.accessibilityIdentifier = "COLLECTION_VIEW"
     }
     
     func configInterface() {
