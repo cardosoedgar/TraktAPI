@@ -24,6 +24,23 @@ class MovieManager {
         }
     }
     
+    func requestMovie(with string: String, completion: @escaping (Bool) -> Void) {
+        network.request(with: string) { result in
+            guard let result = result else {
+                completion(false)
+                return
+            }
+            
+            self.movies = result.compactMap {
+                if let json = $0["movie"] as? JsonObject {
+                    return Movie(jsonObject: json)
+                }
+                return nil
+            }
+            completion(true)
+        }
+    }
+    
     func requestImages(with id: Int, completion: @escaping ([String]?) -> Void) {
         network.requestImages(with: id) { images in
             completion(images?.compactMap { $0["file_path"] as? String })

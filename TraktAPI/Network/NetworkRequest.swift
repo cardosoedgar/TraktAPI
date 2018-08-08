@@ -35,7 +35,7 @@ class NetworkRequest {
     }
     
     func request(with search: String, completion: @escaping ([JsonObject]?) -> Void) {
-        let stringUrl = "https://api.trakt.tv/search/movie?query=\(search)&limit=50"
+        let stringUrl = "https://api.trakt.tv/search/movie?query=\(search)&extended=full&limit=50"
         guard let urlRequest = createURLRequest(with: stringUrl) else {
             return
         }

@@ -38,7 +38,15 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text, !text.isEmpty else {
+            return
+        }
         
+        manager.requestMovie(with: text) { success in
+            if success {
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
