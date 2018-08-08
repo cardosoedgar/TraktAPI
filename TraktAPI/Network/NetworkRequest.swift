@@ -13,11 +13,13 @@ enum Result<T> {
     case error
 }
 
-class NetworkRequest {
-    init() {
-        
-    }
-    
+protocol NetworkRequestManager {
+    func requestPopular(completion: @escaping ([JsonObject]?) -> Void)
+    func request(with search: String, completion: @escaping ([JsonObject]?) -> Void)
+    func requestImages(with id: Int, completion: @escaping ([JsonObject]?) -> Void)
+}
+
+class NetworkRequest: NetworkRequestManager {
     func requestPopular(completion: @escaping ([JsonObject]?) -> Void) {
         let stringUrl = "https://api.trakt.tv/movies/popular?limit=50&extended=full"
         guard let urlRequest = createURLRequest(with: stringUrl) else {

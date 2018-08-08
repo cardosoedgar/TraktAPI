@@ -9,7 +9,8 @@ target 'TraktAPI' do
 
   target 'TraktAPITests' do
     inherit! :search_paths
-    # Pods for testing
+
+    pod 'Nimble'
   end
 
 end

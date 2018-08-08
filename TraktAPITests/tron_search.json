@@ -1,0 +1,518 @@
+ [
+  {
+  "type": "movie",
+  "score": 1000,
+  "movie": {
+  "title": "Tron",
+  "year": 1982,
+  "ids": {
+  "trakt": 66,
+  "slug": "tron-1982",
+  "imdb": "tt0084827",
+  "tmdb": 97
+  },
+  "tagline": "A world inside the computer where man has never been.  Until now.",
+  "overview": "As Kevin Flynn searches for proof that he invented a hit video game, he is 'digitalized' by a laser and finds himself inside The Grid, where programs suffer under the tyrannical rule of the Master Control Program. With the help of TRON, a security program, Flynn seeks to free The Grid from the MCP.",
+  "released": "1982-07-09",
+  "runtime": 96,
+  "country": "us",
+  "trailer": "http://youtube.com/watch?v=Smmu4WG4iVI",
+  "homepage": {},
+  "rating": 7.41616054924742,
+  "votes": 3787,
+  "comment_count": 5,
+  "updated_at": "2018-07-14T09:39:07.000Z",
+  "language": "en",
+  "available_translations": [
+                             "cs",
+                             "da",
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "fr",
+                             "he",
+                             "hu",
+                             "it",
+                             "ja",
+                             "ko",
+                             "lt",
+                             "nl",
+                             "no",
+                             "pl",
+                             "pt",
+                             "ro",
+                             "ru",
+                             "sk",
+                             "sv",
+                             "tr",
+                             "uk",
+                             "zh"
+                             ],
+  "genres": [
+             "action",
+             "adventure",
+             "science-fiction"
+             ],
+  "certification": "PG"
+  }
+  },
+  {
+  "type": "movie",
+  "score": 713.3815,
+  "movie": {
+  "title": "TRON: Legacy",
+  "year": 2010,
+  "ids": {
+  "trakt": 12601,
+  "slug": "tron-legacy-2010",
+  "imdb": "tt1104001",
+  "tmdb": 20526
+  },
+  "tagline": "The Game Has Changed.",
+  "overview": "Sam Flynn, the tech-savvy and daring son of Kevin Flynn, investigates his father's disappearance and is pulled into The Grid. With the help of a mysterious program named Quorra, Sam quests to stop evil dictator Clu from crossing into the real world.",
+  "released": "2010-12-10",
+  "runtime": 125,
+  "country": "us",
+  "trailer": "http://youtube.com/watch?v=L9szn1QQfas",
+  "homepage": "http://disney.go.com/tron/",
+  "rating": 7.28146947595894,
+  "votes": 11106,
+  "comment_count": 40,
+  "updated_at": "2018-07-24T09:16:22.000Z",
+  "language": "en",
+  "available_translations": [
+                             "bg",
+                             "cs",
+                             "da",
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "fi",
+                             "fr",
+                             "he",
+                             "hu",
+                             "id",
+                             "it",
+                             "ja",
+                             "ka",
+                             "ko",
+                             "lt",
+                             "nl",
+                             "no",
+                             "pl",
+                             "pt",
+                             "ro",
+                             "ru",
+                             "sk",
+                             "sl",
+                             "sv",
+                             "th",
+                             "tr",
+                             "uk",
+                             "zh"
+                             ],
+  "genres": [
+             "action",
+             "adventure",
+             "science-fiction"
+             ],
+  "certification": "PG"
+  }
+  },
+  {
+  "type": "movie",
+  "score": 280.96487,
+  "movie": {
+  "title": "TRON: The Next Day",
+  "year": 2011,
+  "ids": {
+  "trakt": 53924,
+  "slug": "tron-the-next-day-2011",
+  "imdb": "tt1865543",
+  "tmdb": 73362
+  },
+  "tagline": "Flynn Lives...",
+  "overview": "TRON: The Next Day is a 10-minute short film, released on the Blu-Ray edition of TRON: Legacy in April 2011, that fills in the backstory between TRON and TRON: Legacy. It features scenes from the real-world Flynn Lives ARG as well as purely in-universe content. The short film also reveals the full chronology of the Flynn Lives Organization, naming Roy Kleinberg as the secret figure heading up the operation and Alan Bradley as its financial backer. Some scenes in the short also set up the story for a potential third film.",
+  "released": "2011-03-14",
+  "runtime": 10,
+  "country": {},
+  "trailer": {},
+  "homepage": "http://disney.go.com/tron/",
+  "rating": 7.05691,
+  "votes": 123,
+  "comment_count": 0,
+  "updated_at": "2017-11-28T09:08:50.000Z",
+  "language": "en",
+  "available_translations": [
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "fr",
+                             "it",
+                             "ko",
+                             "pt",
+                             "ru",
+                             "sv",
+                             "tr"
+                             ],
+  "genres": [
+             "science-fiction",
+             "thriller"
+             ],
+  "certification": "G"
+  }
+  },
+  {
+  "type": "movie",
+  "score": 238.38495,
+  "movie": {
+  "title": "The Making of TRON",
+  "year": 2002,
+  "ids": {
+  "trakt": 53365,
+  "slug": "the-making-of-tron-2002",
+  "imdb": "tt0340232",
+  "tmdb": 72645
+  },
+  "tagline": "",
+  "overview": "This made-for-video documentary treats science fiction fans to a behind-the-scenes look at the making of Tron, Disney's classic live-action film about a programmer who must fight for his life against killer programs after being pulled inside of his company's computer. Includes interviews with the cast and crew of the film who share their experiences from working on this unique project, as well as discuss the special efforts that went into bringing it to completion.",
+  "released": "2002-01-01",
+  "runtime": 88,
+  "country": {},
+  "trailer": {},
+  "homepage": {},
+  "rating": 8.27273,
+  "votes": 11,
+  "comment_count": 0,
+  "updated_at": "2017-06-25T09:22:27.000Z",
+  "language": "en",
+  "available_translations": [
+                             "en"
+                             ],
+  "genres": [],
+  "certification": {}
+  }
+  },
+  {
+  "type": "movie",
+  "score": 15.89914,
+  "movie": {
+  "title": "Savior of the Earth",
+  "year": 1983,
+  "ids": {
+  "trakt": 61213,
+  "slug": "savior-of-the-earth-1983",
+  "imdb": "tt1454628",
+  "tmdb": 81927
+  },
+  "tagline": "",
+  "overview": "Acts of terrorism are happening in the USA, Japan, France and the Pacific Ocean. The man behind these events is Dr. Butler, who tries to rule the world with his powerful computers. To save mankind, Dr. Kim, Sheila and Keith, known as 'Saviors of the Earth', are summoned. The last battle, the Deadly Game, will take place inside a computer.",
+  "released": "1983-08-12",
+  "runtime": 69,
+  "country": {},
+  "trailer": {},
+  "homepage": {},
+  "rating": 6,
+  "votes": 2,
+  "comment_count": 0,
+  "updated_at": "2017-03-10T08:39:09.000Z",
+  "language": "ko",
+  "available_translations": [
+                             "en"
+                             ],
+  "genres": [
+             "anime",
+             "action",
+             "science-fiction"
+             ],
+  "certification": {}
+  }
+  },
+  {
+  "type": "movie",
+  "score": 12.144075,
+  "movie": {
+  "title": "The Throne",
+  "year": 2015,
+  "ids": {
+  "trakt": 196041,
+  "slug": "the-throne-2015",
+  "imdb": "tt4010918",
+  "tmdb": 315439
+  },
+  "tagline": "",
+  "overview": "In the year of 1762, when King Yeongjo of the Joseon dynasty's been ruling for 35 years already, Crown prince Sado is accused of plotting treason by his biological mother lady Yi. Yeongjo falls into a dilemma since he could not penalize his own son as a traitor as it would mean that he would become the father of a traitor threatening his throne, and ends up ordering Sado to take his own life. As Sado’s lieges oppose Yeongjo’s decision by putting their own lives at risk, Yeongjo locks Sado in a wooden rice chest. Locked up without being given a single drop of water, Sado is also deprived from succeeding the throne, having his son take his place as an heir. On the 8th day inside the chest, Sado faces death. The movie follows the most tragic and iconic 8 days in the history of Joseon Dynasty disclosing what forced a father to kill his own son.",
+  "released": "2015-09-16",
+  "runtime": 125,
+  "country": "kr",
+  "trailer": "http://youtube.com/watch?v=SR89DcvmAtY",
+  "homepage": "http://sado.modoo.at/",
+  "rating": 7.17073,
+  "votes": 41,
+  "comment_count": 0,
+  "updated_at": "2018-07-15T09:12:58.000Z",
+  "language": "ko",
+  "available_translations": [
+                             "en",
+                             "es",
+                             "hu",
+                             "ko",
+                             "tr",
+                             "zh"
+                             ],
+  "genres": [
+             "drama",
+             "history"
+             ],
+  "certification": {}
+  }
+  },
+  {
+  "type": "movie",
+  "score": 10.49031,
+  "movie": {
+  "title": "State Property",
+  "year": 2002,
+  "ids": {
+  "trakt": 15097,
+  "slug": "state-property-2002",
+  "imdb": "tt0301893",
+  "tmdb": 25006
+  },
+  "tagline": "",
+  "overview": "Frustrated with being broke, Beans decides that the only way to grasp the American Dream is to take it.",
+  "released": "2002-01-18",
+  "runtime": 88,
+  "country": "us",
+  "trailer": {},
+  "homepage": "http://www.roc-a-fella.com/state.htm",
+  "rating": 7.56383,
+  "votes": 94,
+  "comment_count": 0,
+  "updated_at": "2018-06-04T10:27:27.000Z",
+  "language": "en",
+  "available_translations": [
+                             "bg",
+                             "de",
+                             "en",
+                             "he",
+                             "it"
+                             ],
+  "genres": [
+             "action",
+             "crime",
+             "drama"
+             ],
+  "certification": {}
+  }
+  },
+  {
+  "type": "movie",
+  "score": 9.442258,
+  "movie": {
+  "title": "The Ring",
+  "year": 2002,
+  "ids": {
+  "trakt": 446,
+  "slug": "the-ring-2002",
+  "imdb": "tt0298130",
+  "tmdb": 565
+  },
+  "tagline": "Before you die, you see",
+  "overview": "It sounded like just another urban legend: A videotape filled with nightmarish images, leading to a phone call foretelling the viewer's death in exactly seven days. As a newspaper reporter, Rachel Keller was naturally skeptical of the story, until four teenagers all met with mysterious deaths exactly one week after watching just such a tape. Allowing her investigative curiosity to get the better of her, Rachel tracks down the video... and watches it. Now she has just seven days to unravel the mystery of the Ring.",
+  "released": "2002-10-18",
+  "runtime": 115,
+  "country": "us",
+  "trailer": "http://youtube.com/watch?v=ymPUAsPsTwg",
+  "homepage": "http://www.ring-themovie.com",
+  "rating": 7.0656617798885,
+  "votes": 4843,
+  "comment_count": 10,
+  "updated_at": "2018-08-07T08:57:37.000Z",
+  "language": "en",
+  "available_translations": [
+                             "bg",
+                             "cs",
+                             "da",
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "et",
+                             "fi",
+                             "fr",
+                             "he",
+                             "hr",
+                             "hu",
+                             "it",
+                             "ja",
+                             "ko",
+                             "lt",
+                             "lv",
+                             "nl",
+                             "no",
+                             "pl",
+                             "pt",
+                             "ro",
+                             "ru",
+                             "sk",
+                             "sl",
+                             "sr",
+                             "sv",
+                             "tr",
+                             "uk",
+                             "vi",
+                             "zh"
+                             ],
+  "genres": [
+             "horror",
+             "mystery"
+             ],
+  "certification": "PG-13"
+  }
+  },
+  {
+  "type": "movie",
+  "score": 9.151083,
+  "movie": {
+  "title": "Throne of Blood",
+  "year": 1957,
+  "ids": {
+  "trakt": 2345,
+  "slug": "throne-of-blood-1957",
+  "imdb": "tt0050613",
+  "tmdb": 3777
+  },
+  "tagline": "From the creator of 'Rashomon' and 'Ikiru'",
+  "overview": "Returning to their lord's castle, samurai warriors Washizu and Miki are waylaid by a spirit who predicts their futures. When the first part of the spirit's prophecy comes true, Washizu's scheming wife, Asaji, presses him to speed up the rest of the spirit's prophecy by murdering his lord and usurping his place. Director Akira Kurosawa's resetting of William Shakespeare's 'Macbeth' in feudal Japan is one of his most acclaimed films.",
+  "released": "1957-01-15",
+  "runtime": 108,
+  "country": "jp",
+  "trailer": "http://youtube.com/watch?v=2-72oaAS9hc",
+  "homepage": {},
+  "rating": 7.77358,
+  "votes": 265,
+  "comment_count": 1,
+  "updated_at": "2018-07-09T09:45:50.000Z",
+  "language": "ja",
+  "available_translations": [
+                             "cs",
+                             "da",
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "fi",
+                             "fr",
+                             "he",
+                             "hu",
+                             "it",
+                             "ja",
+                             "ko",
+                             "lt",
+                             "nl",
+                             "pl",
+                             "pt",
+                             "ru",
+                             "sv",
+                             "tr",
+                             "uk",
+                             "zh"
+                             ],
+  "genres": [
+             "drama",
+             "history"
+             ],
+  "certification": {}
+  }
+  },
+  {
+  "type": "movie",
+  "score": 4.7320943,
+  "movie": {
+  "title": "The Scorpion King: Quest for Power",
+  "year": 2015,
+  "ids": {
+  "trakt": 194843,
+  "slug": "the-scorpion-king-quest-for-power-2015",
+  "imdb": "tt3086386",
+  "tmdb": 297291
+  },
+  "tagline": "Action Adventure",
+  "overview": "When he is betrayed by a trusted friend, Mathayus must marshal all his strength and cunning to outwit a formidable opponent who will stop at nothing to unlock a supreme ancient power.",
+  "released": "2015-01-21",
+  "runtime": 105,
+  "country": "us",
+  "trailer": {},
+  "homepage": "https://www.facebook.com/ScorpionKingMovies",
+  "rating": 5.0069,
+  "votes": 145,
+  "comment_count": 1,
+  "updated_at": "2018-08-02T09:45:07.000Z",
+  "language": "en",
+  "available_translations": [
+                             "bg",
+                             "cs",
+                             "da",
+                             "de",
+                             "el",
+                             "en",
+                             "es",
+                             "fr",
+                             "he",
+                             "hu",
+                             "it",
+                             "ja",
+                             "ko",
+                             "nl",
+                             "pl",
+                             "pt",
+                             "ru",
+                             "sv",
+                             "th",
+                             "tr",
+                             "zh"
+                             ],
+  "genres": [
+             "action",
+             "adventure",
+             "fantasy"
+             ],
+  "certification": "PG-13"
+  }
+  },
+  {
+  "type": "movie",
+  "score": 4.161378,
+  "movie": {
+  "title": "Vargens tid",
+  "year": 1988,
+  "ids": {
+  "trakt": 75206,
+  "slug": "vargens-tid-1988",
+  "imdb": "tt0096366",
+  "tmdb": 105739
+  },
+  "tagline": "En ung adelsman letar efter sin tvillingbror",
+  "overview": "Det är 1500-tal, och den unge adelsmannen Inge rider genom Sverige sökandes efter sin tvillingbror Arild. Han träffar en grupp zigenare som välkomnar honom, i tron att han är Arild. Snart blir Inge förälskad i den mystiska flickan Isis.",
+  "released": "1988-01-01",
+  "runtime": 90,
+  "country": {},
+  "trailer": {},
+  "homepage": "",
+  "rating": 5,
+  "votes": 2,
+  "comment_count": 0,
+  "updated_at": "2014-09-20T23:37:29.000Z",
+  "language": {},
+  "available_translations": [
+                             "en"
+                             ],
+  "genres": [],
+  "certification": {}
+  }
+  }
+  ]

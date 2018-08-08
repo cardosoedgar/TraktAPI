@@ -9,8 +9,12 @@
 import Foundation
 
 class MovieManager {
-    private let network = NetworkRequest()
+    private let network: NetworkRequestManager
     private var movies = [Movie]()
+    
+    init(network: NetworkRequestManager = NetworkRequest()) {
+        self.network = network
+    }
     
     func requestPopularMovies(completion: @escaping (Bool) -> Void) {
         network.requestPopular { result in
@@ -52,7 +56,7 @@ class MovieManager {
     }
     
     func getMovie(at index: Int) -> Movie? {
-        if index > movies.count || index < 0 {
+        if index >= movies.count || index < 0 {
             return nil
         }
         
